@@ -9,7 +9,7 @@ const obi = fs.appendFile('./ample1.txt', 'We are balling in class', (error, dat
     }else{
         console.log("data")};
 })
-
+console.log('i am here')
 
 
 // const ebuka = fs.writeFile('./ample1.txt', 'I am the one\n', (error, data)=>{
