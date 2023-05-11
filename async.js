@@ -53,16 +53,10 @@
 // })
 
 
-const fs = require('fs');
-// const pdf = require('pdf-parse');
+const fs = require('fs')
+const pdf12 = require('pdf-parse')
 
-fs.readFileSync('./P.pdf', 'ASCII', (error, data)=>{
-        if(error){
-            console.log(error)
-        }else{
-            const text = data.text;
-            console.log(text);
-        }
-    });
-// const text = data.text;
-// console.log(text); 
+let abc = fs.readFileSync('./small stuff.pdf')
+pdf12(abc).then(function(data){
+    console.log(data.text)
+})
