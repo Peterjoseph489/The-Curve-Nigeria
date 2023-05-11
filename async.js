@@ -52,3 +52,17 @@
 //         console.log(data)};
 // })
 
+
+const fs = require('fs');
+// const pdf = require('pdf-parse');
+
+fs.readFileSync('./P.pdf', 'ASCII', (error, data)=>{
+        if(error){
+            console.log(error)
+        }else{
+            const text = data.text;
+            console.log(text);
+        }
+    });
+// const text = data.text;
+// console.log(text); 
