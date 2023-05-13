@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroContainer{
+    width: 90%;
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+}
